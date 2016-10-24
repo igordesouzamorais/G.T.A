@@ -17,11 +17,19 @@ body{
 	background-image: url(/images/fundomapa.png);
 	background-repeat: no-repeat;
 	background-size: cover;
+	background-position: left top;
 }
 
-#flash-error{
-	margin-top:50px;
+.login-error{
+	position: absolute;
+	top: 100px;
+	z-index: 999;
+	width: 100%;
+	height: 50px;
+	background: red;
+	color: white;
 }
+
 
 /*TELA DE LOGIN*/
 #tela-login h1{

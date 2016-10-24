@@ -1,38 +1,52 @@
+var Endereco = require('../models/endereco');
+var passport = require('passport');
 var express = require('express');
 var router = express.Router();
-var Endereco = require('../models/endereco');
+
+module.exports = function (passport) {
+
+isLoggedIn: function isLoggedIn(req, res, next) {
+    if (req.isAuthenticated()){
+  		return next();
+	}else{
+	    console.log('not logged');
+	  	res.redirect('/login');
+  	}
+}
 
 /*TELAS INICIAIS*/
-router.get('/', function(req, res, next) {
+router.get('/', isLoggedIn, function(req, res, next) {
   res.render('index');
 });
 
-router.get('/mapa', function (req, res, next){
+router.get('/mapa',isLoggedIn, function (req, res, next){
 	res.render('mapa');
 });
 
 router.get('/login', function (req, res, next) {
-	res.render('login');
+	res.render('login', { message: req.flash('loginMessage')});
 });
 
 router.get('/signup', function (req, res, next) {
-	res.render('signup');
+	res.render('signup', { message: req.flash('signupMessage')});
 });
 
-/*app.post('/login', passport.authenticate('login', {
-	successRedirect: '/home', 
-	failureRedirect: '/',
+router.post('/login', passport.authenticate('local-login', {
+	successRedirect: '/', 
+	failureRedirect: '/login',
 	failureFlash : true
-}));*/
+}));
 
-/*app.post('/signup', passport.authenticate('signup', {
-    successRedirect: '/home',
+router.post('/signup', passport.authenticate('local-signup', {
+    successRedirect: '/',
     failureRedirect: '/signup',
     failureFlash : true
   }));
-app.get('/logout', home.logout);*/
 
-
+router.get('/logout', function (req, res, next) {
+	req.logout();
+	res.redirect('/login');
+});
 
 /*ROTAS DO MAPA*/
 router.post('/upload', function (req, res, next) {
@@ -93,4 +107,5 @@ router.put('/atualiza/:id_endereco', function (req, res,next) {
       res.send('ok');
 });
 
-module.exports = router;
+return router;
+}

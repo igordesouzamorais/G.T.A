@@ -16,8 +16,9 @@
     "express-session": "*",
     "mongoose": "*",
     "morgan": "~1.7.0",
-    "passport": "*",
+    "passport": "^0.3.2",
     "passport-local": "*",
+    "passport-local-mongoose": "^4.0.0",
     "serve-favicon": "~2.3.0"
   }
 }
