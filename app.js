@@ -5,6 +5,8 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var session = require('express-session');
+var Mongoose = require('mongoose');
+var db = Mongoose.connection;
 
 var routes = require('./routes/index');
 
@@ -21,25 +23,18 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
-app.use(session({
-  secret: 'mapaeprosfortes',
-  resave: false,
-  saveUninitialized: true,
-  cookie: { secure: true }
-}));
+
 
 app.use('/', routes);
 
 
-global.db = require('mongoose');
-var conection = db.connection;
-
-conection.on('error', console.error);
-conection.once('open', function() {
-  console.log('Conectado ao MongoDB corretamente ...')  
+db.on('error', console.error);
+db.once('open', function() {
+  console.log('Conectado ao MongoDB.')
+  
 });
 
-db.connect('mongodb://127.0.0.1:27017/gta'); 
+Mongoose.connect('mongodb://127.0.0.1:27017/GTA'); 
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
