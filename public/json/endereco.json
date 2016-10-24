@@ -1,0 +1,31 @@
+[
+    {
+        "id":"1",
+        "cliente": "Anderson Morais",
+        "endereco": "Rua Antonio Duarte",
+        "numero": "1627",
+        "bairro": "centro educacional",
+        "cep": "79750000",
+        "cidade": "nova andradina",
+        "uf": "MS",
+        "observacao": "Formatação de Notebook",
+        "data": "10/04/2016"
+    },
+    {
+        "id":"2",
+	    "cliente": "igor de souza morais",
+        "endereco": "rua melvin jones",
+        "numero": "2353",
+        "bairro": "centro educacional",
+        "cep": "79750000",
+        "cidade": "nova andradina",
+        "uf": "MS",
+        "observacao": "Manutenção Impressora",
+        "data": "10/04/2016"
+    }
+    
+]
+
+
+
+

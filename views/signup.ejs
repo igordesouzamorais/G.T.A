@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <title>GTA - Criar Usuário</title>
+      <!--Import Google Icon Font-->
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="/stylesheets/materialize.min.css"  media="screen,projection"/>
+      <link rel="stylesheet" href="/stylesheets/style.css" />
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+
+    <body id="index" class="bg-fundo-mapa">
+      <header>
+        <nav id="menu-mapa" class="blue darken-4">
+          <div class="nav-wrapper">
+            <ul>
+                <a href="#" class="brand-logo">Signup</a>
+                <!--<li class="left"><a href="/" title="Voltar"><i class="material-icons">navigate_before</i></a></li>-->
+                <!--<li class="right"><a href="/mapa" title="Atualizar"><i class="material-icons">loop</i></a></li>-->
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <div id="form-signup">
+        <form action="/signup" method="post">
+
+          <div class="input-field">
+            <label for="username">Login</label>
+            <input type="text" required name="username" class="validate">
+          </div>
+
+          <div class="input-field">
+            <label for="password">Senha</label>
+            <input type="password" required name="password" class="validate">
+          </div>
+
+          <div id="submit" class="center-align">
+            <input type="submit" class="btn blue darken-4 waves-effect waves-light" value="Cadastrar">
+          </div>
+        </form>
+      </div>
+
+    
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script type="text/javascript" src="/javascripts/materialize.min.js"></script>
+      <script type="text/javascript" src="/javascripts/main.js"></script>
+    </body>
+  </html>

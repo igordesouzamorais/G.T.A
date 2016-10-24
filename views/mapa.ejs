@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Trajetos de Atendimentos</title>
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link type="text/css" rel="stylesheet" href="/stylesheets/materialize.min.css"  media="screen,projection"/>
+      <link rel="stylesheet" href="/stylesheets/font-awesome-4.6.3/css/font-awesome.min.css">
+      <link rel="stylesheet" href="/stylesheets/style.css" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDs6dJQydcsLafAH0F1m-tl8IFEhNei-ow"></script>
+</head>
+
+<body class="bg-fundo-mapa">
+      <nav id="menu-mapa" class="blue darken-4">
+            <div class="nav-wrapper">
+                  <ul id="nav-mobile">
+                        <a href="/home" class="brand-logo">
+                              <img src="/images/logo.png" alt="GTA">
+                        </a>
+                        <li class="left"><a href="/home" title="Voltar"><i class="material-icons">navigate_before</i></a></li>
+                        <li class="right"><a href="/mapa" title="Atualizar"><i class="material-icons">loop</i></a></li>
+                  </ul>
+            </div>
+            
+      </nav>
+	<div id="mapa"></div>
+      <script src="/javascripts/jquery-2.2.0.min.js"></script>
+	<script type="text/javascript" src="/javascripts/mapa.js"></script>
+</body>
+</html>

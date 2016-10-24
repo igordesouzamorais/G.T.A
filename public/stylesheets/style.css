@@ -1,0 +1,170 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto';
+
+*,*::after,*::before{
+	padding: 0;
+	margin: 0;
+	box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+}
+
+body{
+	width: 100%;
+	margin: 0 auto;
+}
+
+.bg-fundo-mapa{
+	background-image: url(/images/fundomapa.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#flash-error{
+	margin-top:50px;
+}
+
+/*TELA DE LOGIN*/
+#tela-login h1{
+	width: 150px;
+	height: 30px;
+	line-height: 30px;
+	border-radius: 8px;
+	margin: 0 auto;
+	font-family: 'Roboto', sans-serif;
+	font-size: 2em;
+	
+	color: #0d47a1;
+	text-align: center;
+}
+
+label{
+	color: #00bcd4;
+	font-size: 20px;
+}
+
+li{
+	color: black;
+}
+
+#titulo{
+	text-align: center;
+	width: 100%;
+	margin-top: 0;
+	padding: 0;
+	height: 55px;
+	line-height: 55px;
+	font-size: 3em;
+	position: absolute;
+}
+
+#abrir-mapa{
+	transform: rotate(90deg);
+	margin-right: 10px;
+}
+
+#mapa{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+.salvou{
+	/*margin-bottom: 15px;*/
+	background: white;
+	color:black;
+	padding-left: 25%;
+}
+
+#opcoes ul{
+	position: absolute;
+	float: left;
+	margin: 0;
+	bottom: 0;
+	width: 100%;
+	margin-bottom: 15px;
+}
+
+#opcoes ul li{
+	width: 50%;
+	float: left;
+	height: 50px;
+}
+
+#opcoes ul li a{
+	float: left;
+	width: 48px;
+	margin: 0 auto;
+	height: 48px;
+}
+
+#menu-mapa{
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 2;
+}
+
+footer{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+
+/*estilo dos marcadores*/
+
+.titulo-marcador{
+   font-size: 1.2em;
+   padding: 3%;
+   background-color: #0d47a1;
+   color: white;
+   margin: 5px;
+   border-radius: 5px; 
+   text-align: center;
+   font-family: 'Roboto', sans-serif;
+}
+
+h2{
+	font-size: 1.1em;
+	margin: 0;
+	margin-top: 5px;
+}
+
+.gm-style-iw {
+	height: auto;
+}
+
+/* label color */
+label{
+ color: black;
+ margin-top: 8px;
+}
+
+/*tela de login*/
+#tela-login{
+	margin-top: 100px;
+}
+
+#tela-login form{
+	padding: 5%;
+	width: 100%;
+	width: 80%;
+	margin: 0 auto;
+}
+
+#submit{
+	margin-top: 10px;
+}
+
+/*form signup*/
+#form-signup{
+	margin-top: 100px;
+}
+
+.logout{
+	width: 110px;
+	color: white !important;
+	margin: 0 auto !important;
+	height: 50px !important;
+	line-height: 50px !important;
+	margin-top: 15px !important;
+}

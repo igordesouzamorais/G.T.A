@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <title>GTA - Gerenciamento de Trajetos de Atendimento</title>
+      <!--Import Google Icon Font-->
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="/stylesheets/materialize.min.css"  media="screen,projection"/>
+      <link rel="stylesheet" href="/stylesheets/style.css" />
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+
+    <body id="index" class="bg-fundo-mapa">
+    <main>
+      <header>
+        <nav id="menu" class="blue darken-4">
+          <ul id="slide-out" class="side-nav">
+          	<li class="center">
+              <label for="caminho">Caminho JSON</label>
+              <input id="caminho" placeholder="Caminho JSON" type="text" class="validate">
+            </li>
+          	<li class="center">
+              <input type="button" data-activates="slide-out" value="Salvar" id="salvar" class="btn voltar blue darken-4"></input>
+          	  <input type="button" data-activates="slide-out" value="Voltar" class="btn voltar blue darken-4">
+              <!--<input type="button" data-activates="slide-out" value="Logout" class="btn voltar blue darken-4">-->
+              <a href="/logout" class="voltar red darken-1 btn logout">Logout</a>
+            </li>
+          </ul>
+          <a href="#" data-activates="slide-out" class="button-collapse abrir"><i class="mdi-navigation-menu"></i></a>
+          <a href="/home" class="brand-logo logo">
+            <img src="/images/logo.png" alt="GTA">
+          </a>
+          <a href="/mapa" id="abrir-mapa" title="Carregar Mapa" class="right"><i class="material-icons">navigation</i></a>
+        </nav>
+      </header>
+      <footer class="page-footer blue darken-4">
+        <div class="footer-copyright">
+          <div class="container center">
+            G.T.A - Gerenciador de Trajetos de Atendimento
+          </div>
+        </div>
+      </footer>
+
+    
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script type="text/javascript" src="/javascripts/materialize.min.js"></script>
+      <script type="text/javascript" src="/javascripts/main.js"></script>
+      </main>
+    </body>
+  </html>
