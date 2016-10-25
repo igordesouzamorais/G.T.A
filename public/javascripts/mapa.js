@@ -71,8 +71,7 @@ function buscarCadastrados(){
     type: 'GET',
     dataType: 'json',
     error: function(erro){
-        console.log('erro na função buscar cadastrados');
-        console.log(erro);
+        console.log('erro na função buscar cadastrados' + erro);
       }
     }).done(function(valores) {
       geraRota(valores);
@@ -93,8 +92,7 @@ function converteEndereco(enderecos) {
           url: "/upload",
           data: endereco,
           error: function(erro){
-            console.log('erro na funcao salvaBanco');
-            console.log(erro);
+            console.log('erro na funcao salvaBanco' + erro);
           }
         });
       }

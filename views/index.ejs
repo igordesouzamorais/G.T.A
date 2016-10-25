@@ -12,7 +12,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     </head>
 
-    <body id="index" class="bg-fundo-mapa">
+    <body id="index">
     <main>
       <header>
         <nav id="menu" class="blue darken-4">
@@ -29,20 +29,11 @@
             </li>
           </ul>
           <a href="#" data-activates="slide-out" class="button-collapse abrir"><i class="mdi-navigation-menu"></i></a>
-          <a href="/home" class="brand-logo logo">
-            <img src="/images/logo.png" alt="GTA">
-          </a>
+          <a href="/" class="brand-logo"><%=user.username%></a>
           <a href="/mapa" id="abrir-mapa" title="Carregar Mapa" class="right"><i class="material-icons">navigation</i></a>
         </nav>
       </header>
-      <footer class="page-footer blue darken-4">
-        <div class="footer-copyright">
-          <div class="container center">
-            G.T.A - Gerenciador de Trajetos de Atendimento
-          </div>
-        </div>
-      </footer>
-
+      <div class="logo"><img src="/images/logo_grande.png" alt="G.T.A"></div>
     
       <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
       <script type="text/javascript" src="/javascripts/materialize.min.js"></script>

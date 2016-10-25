@@ -1,9 +1,10 @@
 {
-  "name": "G.T.A",
-  "version": "0.0.0",
+  "name": "GTA",
+  "version": "0.0.2",
   "private": true,
+  "main": "app.js",
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "node app.js"
   },
   "dependencies": {
     "bcrypt-nodejs": "*",
@@ -13,12 +14,12 @@
     "debug": "~2.2.0",
     "ejs": "~2.4.1",
     "express": "~4.13.4",
+    "express-load": "*",
     "express-session": "*",
     "mongoose": "*",
     "morgan": "~1.7.0",
-    "passport": "^0.3.2",
+    "passport": "*",
     "passport-local": "*",
-    "passport-local-mongoose": "^4.0.0",
     "serve-favicon": "~2.3.0"
   }
 }
