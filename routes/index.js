@@ -1,9 +1,9 @@
+module.exports = function (passport) {
 var Endereco = require('../models/endereco');
 var passport = require('passport');
 var express = require('express');
 var router = express.Router();
 
-module.exports = function (passport) {
 
 isLoggedIn: function isLoggedIn(req, res, next) {
     if (req.isAuthenticated()){
