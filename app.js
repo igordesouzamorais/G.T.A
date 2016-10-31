@@ -20,7 +20,8 @@ conection.once('open', function() {
   console.log('Conectado ao MongoDB corretamente ...')  
 });
 
-db.connect('mongodb://127.0.0.1:27017/GTA');
+//db.connect('mongodb://127.0.0.1:27017/GTA');
+db.connect(process.env.MONGOLAB_URI);
 
 // uncomment after placing your favicon in /public
 //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
